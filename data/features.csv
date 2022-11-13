@@ -1,0 +1,56 @@
+﻿Codelist,,,,,,
+Var. #,Variable Name,Description,Variable Type,Code Description,feature,target
+,,,,,,
+1.  ,OBS#,Observation No.,Categorical,,0,0
+2.  ,CHK_ACCT,Checking account status,Categorical,0 : < 0 ,1,0
+,,,,1:  0 < ...< 200 ,1,0
+,,,,2 : => 200 ,1,0
+,,,,3:  no checking account,1,0
+3.  ,DURATION,Duration of credit in months,Numerical,,1,0
+4.  ,HISTORY,Credit history,Categorical,0: no credits taken                                                                                                                   ,1,0
+,,,,1: all credits at this bank paid back duly ,1,0
+,,,,2: existing credits paid back duly till now ,1,0
+,,,,3: delay in paying off in the past  ,1,0
+,,,,4: critical account  ,1,0
+5.  ,NEW_CAR,Purpose of credit,Binary,"car (new)   0: No, 1: Yes",1,0
+6,USED_CAR,Purpose of credit,Binary,"car (used)    0: No, 1: Yes",1,0
+7,FURNITURE,Purpose of credit,Binary,"furniture/equipment    0: No, 1: Yes",1,0
+8,RADIO/TV,Purpose of credit,Binary,"radio/television    0: No, 1: Yes",1,0
+9,EDUCATION,Purpose of credit,Binary,"education    0: No, 1: Yes",1,0
+10,RETRAINING,Purpose of credit,Binary,"retraining    0: No, 1: Yes",1,0
+11,AMOUNT,Credit amount,Numerical,,1,0
+12,SAV_ACCT,Average balance in savings account,Categorical,0 : <  100 ,1,0
+,,,,1 : 100<= ... <  500 ,1,0
+,,,,2 : 500<= ... < 1000 ,1,0
+,,,,3 : =>1000 ,1,0
+,,,,4 :   unknown/ no savings account,1,0
+13,EMPLOYMENT,Present employment since,Categorical,0 : unemployed,1,0
+,,,,1:  < 1 year,1,0
+,,,,2 : 1 <= ... < 4 years  ,1,0
+,,,,3 : 4 <=... < 7 years,1,0
+,,,,4 : >= 7 years,1,0
+14,INSTALL_RATE,Installment rate as % of disposable income,Numerical,,1,0
+15,MALE_DIV,Applicant is male and divorced,Binary," 0: No, 1: Yes",1,0
+16,MALE_SINGLE,Applicant is male and single,Binary," 0: No, 1: Yes",1,0
+17,MALE_MAR_WID,Applicant is male and married or a widower,Binary," 0: No, 1: Yes",1,0
+18,CO-APPLICANT,Application has a co-applicant,Binary," 0: No, 1: Yes",1,0
+19,GUARANTOR,Applicant has a guarantor,Binary," 0: No, 1: Yes",1,0
+20,PRESENT_RESIDENT,Present resident since - years,Categorical,0: <= 1 year,1,0
+,,,,1<…<=2 years,1,0
+,,,,2<…<=3 years,1,0
+,,,,3:>4years,1,0
+21,REAL_ESTATE,Applicant owns real estate,Binary," 0: No, 1: Yes",1,0
+22,PROP_UNKN_NONE,Applicant owns no property (or unknown),Binary," 0: No, 1: Yes",1,0
+23,AGE,Age in years,Numerical,,1,0
+24,OTHER_INSTALL,Applicant has other installment plan credit,Binary," 0: No, 1: Yes",1,0
+25,RENT,Applicant rents ,Binary," 0: No, 1: Yes",1,0
+26,OWN_RES,Applicant owns residence,Binary," 0: No, 1: Yes",1,0
+27,NUM_CREDITS,Number of existing credits at this bank,Numerical,,1,0
+28,JOB,Nature of job,Categorical,0 : unemployed/ unskilled  - non-resident,1,0
+,,,,1 : unskilled - resident,1,0
+,,,,2 : skilled employee / official,1,0
+,,,,3 : management/ self-employed/highly qualified employee/ officer,1,0
+29,NUM_DEPENDENTS,Number of people for whom liable to provide maintenance,Numerical,,1,0
+30,TELEPHONE,Applicant has phone in his or her name,Binary," 0: No, 1: Yes",1,0
+31,FOREIGN,Foreign worker,Binary," 0: No, 1: Yes",1,0
+32,DEFAULT,Defaulted on loan,Binary," 0: No, 1: Yes",0,1
